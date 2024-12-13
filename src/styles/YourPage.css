@@ -31,19 +31,19 @@ html {
 }
 
 .choice-button.poem {
-  background-color: #8e44ad;
+  background-color: #34495e;
 }
 
 .choice-button.poem:hover {
-  background-color: #9b59b6;
+  background-color: #34495e;
 }
 
 .choice-button.podcast {
-  background-color: #27ae60;
+  background-color: #34495e;
 }
 
 .choice-button.podcast:hover {
-  background-color: #219a52;
+  background-color: #34495e;
 }
 
 .content-container {
