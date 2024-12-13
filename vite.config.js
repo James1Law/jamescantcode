@@ -9,5 +9,15 @@ export default defineConfig({
     port: 5173
   },
   assetsInclude: ['**/*.pdf'],
-  base: '/jamescantcode/'
+  base: '/jamescantcode/',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
+  }
 })
