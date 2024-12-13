@@ -114,22 +114,35 @@ function PodcastPlayer({ audioSrc, onReset }) {
         </div>
         <div className="controls-container">
           <button onClick={() => skipTime(-10)} className="control-button">
-            -10s
+            <span className="skip-text">-10</span>
           </button>
           <button onClick={togglePlayPause} className="play-button">
-            {isPlaying ? '⏸️' : '▶️'}
+            {isPlaying ? 
+              <svg viewBox="0 0 24 24" className="control-icon">
+                <rect x="6" y="4" width="4" height="16" />
+                <rect x="14" y="4" width="4" height="16" />
+              </svg>
+              : 
+              <svg viewBox="0 0 24 24" className="control-icon">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            }
           </button>
           <button onClick={() => skipTime(10)} className="control-button">
-            +10s
+            <span className="skip-text">+10</span>
           </button>
           <button onClick={handlePlaybackRate} className="speed-button">
             {playbackRate}x
           </button>
-          <button onClick={handleReset} className="reset-button">
-            ↺
-          </button>
         </div>
       </div>
+      
+      <button onClick={handleReset} className="floating-reset-button">
+        <svg viewBox="0 0 24 24" className="reset-icon">
+          <path d="M17.65 6.35A7.958 7.958 0 0012 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0112 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
+        </svg>
+      </button>
+
       <LinkedInPost />
       <CVViewer />
     </div>
