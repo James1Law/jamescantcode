@@ -1,0 +1,46 @@
+.poem-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+.stanza-container {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.poem-stanza {
+  opacity: 0;
+  transform: scale(0.95) rotate(-2deg);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0;
+  white-space: pre-wrap;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #2c3e50;
+  font-style: italic;
+}
+
+.poem-stanza.visible {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+.poem-button {
+  background-color: #8e44ad;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 1rem 0;
+  display: block;
+}
+
+.poem-button:hover {
+  background-color: #9b59b6;
+} 

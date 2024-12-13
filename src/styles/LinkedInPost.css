@@ -1,0 +1,104 @@
+.linkedin-post {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.profile-info h3 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.job-title {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.linkedin-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.post-content {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+
+.shared-content {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.company-info {
+  margin-bottom: 1rem;
+}
+
+.company-info h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.company-info span {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.key-benefits {
+  margin-top: 1rem;
+}
+
+.key-benefits ul {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+}
+
+.key-benefits li {
+  margin: 0.5rem 0;
+}
+
+.post-footer {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.view-on-linkedin {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #0077b5;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.view-on-linkedin:hover {
+  background-color: #006396;
+}
+
+@media (max-width: 768px) {
+  .linkedin-post {
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+
+  .shared-content {
+    padding: 0.8rem;
+  }
+} 

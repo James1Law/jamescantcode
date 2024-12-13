@@ -1,0 +1,24 @@
+.word-pull-up {
+  display: inline-block;
+}
+
+.char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.char.visible {
+  animation: pullUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes pullUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 
