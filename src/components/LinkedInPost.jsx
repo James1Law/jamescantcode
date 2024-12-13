@@ -1,4 +1,5 @@
 import '../styles/LinkedInPost.css';
+import linkedinLogo from '../assets/linkedin-logo.png';
 
 function LinkedInPost() {
   return (
@@ -9,7 +10,7 @@ function LinkedInPost() {
           <span className="job-title">Product Manager</span>
         </div>
         <img 
-          src="/linkedin-logo.png" 
+          src={linkedinLogo} 
           alt="LinkedIn" 
           className="linkedin-icon"
         />
