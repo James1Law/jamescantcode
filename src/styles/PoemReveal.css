@@ -29,18 +29,33 @@
 }
 
 .poem-button {
-  background-color: #8e44ad;
-  color: white;
+  background: #2c3e50;
+  color: #ffffff;
+  padding: 12px 24px;
   border: none;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin: 1rem 0;
-  display: block;
+  font-size: 16px;
+  transition: all 0.2s;
 }
 
 .poem-button:hover {
-  background-color: #9b59b6;
+  background: #34495e;
+  transform: scale(1.05);
+}
+
+.reset-button {
+  background: #2c3e50;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.2s;
+}
+
+.reset-button:hover {
+  background: #34495e;
+  transform: scale(1.05);
 } 
